@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "RxCoreData",
-            dependencies: ["RxSwift"], // "RxRelay"],
+            dependencies: ["RxSwift", "RxCocoaRuntime", "RxDataSources"],
             path: "." // Sources
         ),
 //        .testTarget(
