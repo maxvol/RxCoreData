@@ -52,6 +52,7 @@ class ViewController: UIViewController {
             .addDisposableTo(disposeBag)
         */
         
+        /*
         // Animated
 
         let animatedDataSource = RxTableViewSectionedAnimatedDataSource<AnimatableSectionModel<String, Event>>()
@@ -86,5 +87,6 @@ class ViewController: UIViewController {
         animatedDataSource.canMoveRowAtIndexPath = { _ in
             return true
         }
+        */
     }
 }
