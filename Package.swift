@@ -12,15 +12,17 @@ let package = Package(
             targets: ["RxCoreData"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0"),
+//         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0"),
+        .package(url: "https://github.com/maxvol/Rx.git"),
         .package(url: "https://github.com/RxSwiftCommunity/RxDataSources.git", from: "4.0.1")
     ],
     targets: [
         .target(
             name: "RxCoreData",
             dependencies: [
-                .product(name: "RxSwift", package: "RxSwift"),
-                .product(name: "RxCocoa", package: "RxSwift"),
+//                 .product(name: "RxSwift", package: "RxSwift"),
+//                 .product(name: "RxCocoa", package: "RxSwift"),
+                "Rx",
                 "RxDataSources"
             ],
             path: "." // Sources
