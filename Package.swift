@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
 //         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0"),
-        .package(url: "https://github.com/maxvol/Rx.git", .branch("main")),
+        .package(url: "https://github.com/maxvol/RxSPM.git", .branch("main")),
         .package(url: "https://github.com/RxSwiftCommunity/RxDataSources.git", from: "4.0.1")
     ],
     targets: [
